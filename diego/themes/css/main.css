@@ -784,3 +784,8 @@ section.our_client .row{
 		border-bottom:1px solid #eee;
 	}
 }
+.tabla{
+	margin-top: 100px;
+	margin-left: 200px;
+	width: 70%;
+}
