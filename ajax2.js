@@ -1,6 +1,6 @@
 console.log('activo')
 
-document.querySelector('#bton1').addEventListener('click', traerdatos());
+document.querySelector('#btn1.3').addEventListener('click', traerdatos());
 function traerdatos(){
     console.log('correcto');
     const xhttp = new XMLHttpRequest();
@@ -13,10 +13,10 @@ function traerdatos(){
            // console.log(this.responseText);
 
             let datos = JSON.parse(this.responseText);
-            let res = document.querySelector('#res');
-            res.innerHTML='';
+            let rep = document.querySelector('#rep');
+            rep.innerHTML='';
             for(let i of datos){
-                res.innerHTML += `
+                rep.innerHTML += `
                 <tr>
                     <td>${i.ID}</td>
                     <td>${i.Categoria}</td>
